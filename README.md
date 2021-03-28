@@ -17,7 +17,7 @@ python -m dpipe build_experiment --config_path "$1" --experiment_path "$2"
 ```
 
 where the first argument is a path to the `.config` file e.g., 
-`"~/miccai_paper/config/expepiments/baseline.config"`
+`"~/FBPAug/configs/expepiments/baseline.config"`
 and the second argument is a path to the folder where the experiment
 structure will be organized, e.g.
 `"~/miccai_paper/baseline"`.
