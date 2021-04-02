@@ -100,16 +100,13 @@ def add_gaussian_noise(img):
     return random_noise(img, mode='gaussian', clip=False), target
 
 
-def gamma_transform(img, already_scaled=False):
-    img, target = img
+def gamma_transform(img):
+    img = img
     gamma = np.exp(np.random.randn() * 0.2)
-    if not already_scaled:
-        img_max, img_min = np.max(img), np.min(img)
-        scaled_image = (img - img_min) / (img_max - img_min)
-        gamma_scaled_img = adjust_gamma(scaled_image, gamma=gamma)
-        return gamma_scaled_img * (img_max - img_min) + img_min, target
-    else:
-        return adjust_gamma(img, gamma=gamma), target
+    img_max, img_min = np.max(img), np.min(img)
+    scaled_image = (img - img_min) / (img_max - img_min)
+    gamma_scaled_img = adjust_gamma(scaled_image, gamma=gamma)
+    return gamma_scaled_img * (img_max - img_min) + img_min
 
 
 def windowing_augmentation(image, apply_normalize=True):
