@@ -96,8 +96,7 @@ def symmetry_transform_2d(inputs, spatial2d_axis=(-2, -1)):
 
 
 def add_gaussian_noise(img):
-    img, target = img
-    return random_noise(img, mode='gaussian', clip=False), target
+    return random_noise(img, mode='gaussian', clip=False)
 
 
 def gamma_transform(img):
