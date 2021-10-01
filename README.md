@@ -8,6 +8,14 @@ git clone https://github.com/STNLd2/FBPAug.git
 ```
 Install [surface-distance](https://github.com/deepmind/surface-distance) as well to compute surface metrics.
 
+## Example of using
+```python
+from fbp_aug import apply_conv_filter
+sharper_ct_image = apply_conv_filter(ct_image, a=30, b=3)
+
+```
+![example of using](https://github.com/STNLd2/FBPAug/blob/master/pics/example_of_using.jpg?raw=true)
+
 ## Experiment Reproduction
 To run a single experiment please follow the steps below:
 
@@ -31,3 +39,5 @@ and call the following command to start the experiment:
 python -m dpipe run_experiment --config_path "../resources.config"
 ```
 where `resources.config` is the general `.config` file of the experiment.
+
+
