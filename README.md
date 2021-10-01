@@ -6,7 +6,6 @@ Code release for the paper [Zero-Shot Domain Adaptation in CT Segmentation by Fi
 git clone https://github.com/STNLd2/FBPAug.git
 ./FBPAug/install.sh
 ```
-Install [surface-distance](https://github.com/deepmind/surface-distance) as well to compute surface metrics.
 
 ## Example of using
 ```python
