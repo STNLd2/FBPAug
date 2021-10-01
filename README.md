@@ -14,7 +14,7 @@ from fbp_aug import apply_conv_filter
 sharper_ct_image = apply_conv_filter(ct_image, a=30, b=3)
 
 ```
-![example of using](https://https://github.com/STNLd2/FBPAug/blob/master/pics/example_of_transform.png?raw=true)
+![example of using](https://github.com/STNLd2/FBPAug/blob/master/pics/example_of_transform.png?raw=true)
 
 ## Experiment Reproduction
 To run a single experiment please follow the steps below:
