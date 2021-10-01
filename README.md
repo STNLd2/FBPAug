@@ -1,5 +1,5 @@
-# Zero-Shot Domain Adaptation in CT Segmentation by Filtered Back Projection Augmentation
-Code release
+# FBP Augmentation
+Code release for the paper [Zero-Shot Domain Adaptation in CT Segmentation by Filtered Back Projection Augmentation](https://arxiv.org/abs/2107.08543)
 ## Install
 
 ```
